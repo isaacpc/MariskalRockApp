@@ -9,21 +9,18 @@ import com.isaacpc.mariskalrock.R;
 
 public class PreferencesActivity extends PreferenceActivity {
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-                super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 
-                // Load the preferences from an XML resource
-                addPreferencesFromResource(R.xml.preferences);
+        // Load the preferences from an XML resource
+        addPreferencesFromResource(R.xml.preferences);
 
-                PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-                final SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(this);
-                p.getString("key", "value_default");
-        }
-
-
-
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        final SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(this);
+        p.getString("key", "value_default");
+    }
 
 
 }

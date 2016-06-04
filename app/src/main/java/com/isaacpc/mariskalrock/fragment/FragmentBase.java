@@ -103,25 +103,17 @@ public abstract class FragmentBase extends Fragment {
         Log.i(LOG_TAG, "onActivityCreated");
 
         configureBroadcasts();
-
-        // se capturan los componentes
         catchComponents();
     }
-
 
     /**
      * Configura los broadcasts
      */
     protected final void configureBroadcasts() {
-        Log.i(LOG_TAG, "Se configura el broadcast de Share");
-
-
         // handler for received Intents for the "my-event" event
         shareBroadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context ctx, Intent intent) {
-                Log.i(LOG_TAG, "Comparte un link");
-
                 final Bundle bundle = intent.getExtras();
                 final String url = bundle.getString(ShareReceiver.PARAM_LINK);
                 share(url);
@@ -199,7 +191,6 @@ public abstract class FragmentBase extends Fragment {
 
     @Override
     public void onResume() {
-        Log.i(LOG_TAG, "onResume()");
         // Crea el receiver para actualizar la lista cuando se ha cambiado algo
         this.getActivity().registerReceiver(shareBroadcastReceiver, new IntentFilter(BroadcastConstants.BROADCAST_SHARE));
 
@@ -208,7 +199,6 @@ public abstract class FragmentBase extends Fragment {
 
     @Override
     public void onPause() {
-        Log.i(LOG_TAG, "onPause()");
         // Unregister since the activity is not visible
         this.getActivity().unregisterReceiver(shareBroadcastReceiver);
         super.onPause();

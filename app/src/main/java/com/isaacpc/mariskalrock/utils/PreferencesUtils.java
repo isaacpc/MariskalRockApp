@@ -57,7 +57,6 @@ public class PreferencesUtils {
                         editor.commit();
 
                 }
-
         }
 
         /**

@@ -6,8 +6,6 @@ import android.widget.ImageButton;
 
 public class MRAnimationUtils {
 
-
-
         /**
          * Aplica al botón un efecto de alpha
          * 

@@ -12,32 +12,32 @@ import com.isaacpc.mariskalrock.fragment.VideoFragment;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
-        public TabsPagerAdapter(FragmentManager fm) {
-                super(fm);
+    public TabsPagerAdapter(FragmentManager fm) {
+        super(fm);
+    }
+
+    @Override
+    public Fragment getItem(int index) {
+
+
+        switch (index) {
+            case 0:
+                return new NoticiasFragment();
+            case 1:
+                return new PodcastFragment();
+            case 2:
+                return new VideoFragment();
+            case 3:
+                return new RadioFragment();
         }
 
-        @Override
-        public Fragment getItem(int index) {
+        return null;
+    }
 
-
-                switch (index) {
-                case 0:
-                        return new NoticiasFragment();
-                case 1:
-                        return new PodcastFragment();
-                case 2:
-                        return new VideoFragment();
-                case 3:
-                        return new RadioFragment();
-                }
-
-                return null;
-        }
-
-        @Override
-        public int getCount() {
-                // get item count - equal to number of tabs
-                return 4;
-        }
+    @Override
+    public int getCount() {
+        // get item count - equal to number of tabs
+        return 4;
+    }
 
 }

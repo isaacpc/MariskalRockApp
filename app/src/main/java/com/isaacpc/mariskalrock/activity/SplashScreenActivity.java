@@ -53,7 +53,7 @@ public class SplashScreenActivity extends Activity {
             versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
         } catch (final NameNotFoundException e) {
             versionName = null;
-            Log.w(this.getClass().toString(), "VersionName no encontrada.");
+            Log.w(this.getClass().toString(), "VersionName not found");
         }
 
         final TextView versionText = (TextView) findViewById(R.id.versionName);

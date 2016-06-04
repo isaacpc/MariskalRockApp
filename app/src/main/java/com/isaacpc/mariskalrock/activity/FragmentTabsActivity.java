@@ -23,7 +23,7 @@ import com.isaacpc.mariskalrock.thread.FeedUpdaterService;
 import com.isaacpc.mariskalrock.utils.DateUtils;
 import com.isaacpc.mariskalrock.utils.PreferencesUtils;
 
-//public class FragmentTabsActivity extends TabSwipeActivity {
+
 public class FragmentTabsActivity extends ActionBarActivity implements ActionBar.TabListener {
 
     private static final String LOG_TAG = "FragmentTabsActivity";
@@ -38,7 +38,6 @@ public class FragmentTabsActivity extends ActionBarActivity implements ActionBar
 
         setContentView(R.layout.fragment_tabs_pager);
 
-        // Initilization
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getSupportActionBar();
         mAdapter = new TabsPagerAdapter(getSupportFragmentManager());
@@ -73,10 +72,6 @@ public class FragmentTabsActivity extends ActionBarActivity implements ActionBar
             public void onPageScrollStateChanged(int arg0) {
             }
         });
-
-        //lanza el scheduler de noticias
-        // new FeedScheduler(this).scheduleNoticias();
-
         checkUpdateNoticias();
     }
 
@@ -144,16 +139,12 @@ public class FragmentTabsActivity extends ActionBarActivity implements ActionBar
      * @return
      */
     protected boolean isNeededRefreshTime(Context context) {
-        Log.i(LOG_TAG, "Comprueba si es necesario actualizar al cargar la pantalla (por tiempo)");
         final String fecha = PreferencesUtils.getPreferenceValue(Constants.PREF_LAST_UPDATE_NOTICIAS, context);
 
         final Calendar now = Calendar.getInstance();
         if (fecha != null) {
             final Calendar lastUpdate = DateUtils.stringToCalendar(fecha);
-
             lastUpdate.add(Calendar.MINUTE, Constants.REFRESH_NOTICIAS_MIN_TIME);
-
-            Log.d(LOG_TAG, "Se actualizó por ultima vez el " + fecha);
             return lastUpdate.before(now);
         } else {
             return false;
