@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TEMA DE MARISKAL ROCK -->
+    <style name="MariskalRockTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Estilo de la barra -->
+    <style name="MariskalRockTheme.MRActionBarStyle">
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="MRFont">
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="MRFont.listItemTitle">
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MRFont.widgetTitle">
+        <item name="android:textColor">@color/widgetTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MRFont.widgetDescription">
+        <item name="android:textColor">@color/widgetDescription</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MRFont.widgetDate">
+        <item name="android:textColor">@color/widgetDescription</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MRFont.listItemSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/subtitle</item>
+    </style>
+
+    <style name="MRFont.listItemDate">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/subtitle</item>
+    </style>
+
+    <style name="MRFont.listItemAction">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/link</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MRFont.videoDate">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/videoDate</item>
+    </style>
+
+    <style name="MRFont.message">
+        <item name="android:textColor">@color/message</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MRFont.messageWidget">
+        <item name="android:textColor">@color/message</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MRListItem">
+        <item name="android:background">@drawable/list_item_background</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="MRFont.copyright">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MRFont.contacto">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="MRFont.version">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="MRFont.versionName">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- ABOUT -->
+    <style name="about_style">
+        <item name="android:background">@color/about_background</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="about_logo">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/androide_intro</item>
+    </style>
+
+    <style name="about_description">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="about_disclaimer">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/about_disclaimer</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+   <style name="text_disclaimer">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+   <style name="Disclaimer.text.versionName" parent="MRFont">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    
+    <!--  PREFERENCES -->
+    <style name="PreferencesTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@color/about_background</item>
+    </style>
+    
+</resources>

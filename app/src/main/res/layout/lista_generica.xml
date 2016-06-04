@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lista_generica_background" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/listFeed"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <!-- pantalla de Loading -->
+    <RelativeLayout 
+        android:id="@+id/loadingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtWait"
+            style="@style/MRFont.message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/progress_load_data_message" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar3"
+        	android:minHeight="48dp" 
+            android:layout_below="@id/txtWait"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+       <!-- pantalla de error. Reintento. -->
+   <RelativeLayout 
+       android:id="@+id/errorLayout"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:padding="10dp"
+       android:visibility="gone">
+
+       <TextView
+           android:id="@+id/txtErrorMessage"
+           style="@style/MRFont.message"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerInParent="true"
+           android:layout_marginBottom="10dp"
+           android:gravity="center_horizontal"
+           android:text="@string/error_actualizando" />
+
+       <Button
+           android:id="@+id/btRetry"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/txtErrorMessage"
+           android:layout_centerHorizontal="true"
+           android:text="@string/boton_reintentar" 
+          	/>
+   </RelativeLayout>
+
+</FrameLayout>

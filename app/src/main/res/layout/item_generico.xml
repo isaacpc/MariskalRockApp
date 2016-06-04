@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <RelativeLayout
+            android:background="@color/itemListNormal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thumbnail_heigth"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/imagen_item"
+                android:layout_marginBottom="6sp"
+                android:src="@drawable/ic_fallback_grande" />
+
+            <ProgressBar
+                android:id="@+id/pbThumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                style="@style/MRFont.listItemTitle"
+                android:layout_toLeftOf="@+id/ibSettings"
+                android:text="@string/dataNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail"
+                android:maxLines="3"/>
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                style="@style/MRFont.listItemSubtitle"
+                android:layout_marginBottom="4dp"
+                android:text="@string/dataNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitulo"
+                android:maxLines="5"
+                android:padding="8dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/txtDescripcion"
+                android:padding="10sp"
+                >
+
+                <TextView
+                    android:id="@+id/btShow"
+                    style="@style/MRFont.listItemAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_show"
+                    android:layout_marginRight="15sp"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/btShare"
+                    style="@style/MRFont.listItemAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btShow"
+                    android:layout_toEndOf="@+id/btShow"
+                    android:text="@string/bt_share"/>
+
+                <TextView
+                    android:id="@+id/txtFecha"
+                    style="@style/MRFont.listItemDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="10/10/2016"
+                    android:layout_alignParentRight="true"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

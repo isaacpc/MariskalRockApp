@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appwidget_dark_bg" >
+
+    <LinearLayout
+        android:id="@+id/llContenedor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/llArticulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <!-- imagen del widget con Progressbar -->
+            <FrameLayout
+                android:layout_width="@dimen/widget_thumbnail_width"
+                android:layout_height="@dimen/widget_thumbnail_height"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="6dp" >
+
+                <ImageView
+                    android:id="@+id/imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/widgetImage"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_fallback"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/pbThumbnail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    style="@style/MRFont.widgetTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:maxLines="1"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    style="@style/MRFont.widgetDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top"
+                    android:maxLines="7"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/llBotonera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="bottom"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/icNext_disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:contentDescription="@string/widget_button_next"
+                android:src="@drawable/ic_izqda_off"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/icNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/widget_button_next"
+                android:src="@drawable/ic_izqda" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                style="@style/MRFont.widgetDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp" />
+
+            <ImageButton
+                android:id="@+id/icPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/widget_button_previous"
+                android:src="@drawable/ic_dcha" />
+
+            <ImageButton
+                android:id="@+id/icPrevious_disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:contentDescription="@string/widget_button_previous"
+                android:src="@drawable/ic_drcha_off"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- pantalla de Loading -->
+
+    <include
+        layout="@layout/widget_loading"
+        android:visibility="visible" />
+
+    <include
+        layout="@layout/widget_loading_error"
+        android:visibility="invisible" />
+
+</FrameLayout>

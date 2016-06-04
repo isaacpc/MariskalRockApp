@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      >
+    <item
+        android:id="@+id/actionConfig"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_action_overflow_dark"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionInfo"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_action_about"
+        app:showAsAction="always" />
+</menu>

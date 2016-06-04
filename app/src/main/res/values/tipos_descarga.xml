@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="tipos_descarga">
+      <item>Siempre</item>
+      <item>Nunca</item>
+      <item>Solo con Wifi</item>
+   </string-array>
+   <string-array name="tipos_descarga_key">
+      <item>siempre</item>
+      <item>nunca</item>
+      <item>wifi</item>
+   </string-array>
+</resources>

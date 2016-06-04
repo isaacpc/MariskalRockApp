@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- pantalla de error. Reintento. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/txtErrorMessage"
+        style="@style/MRFont.messageWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/error_actualizando" />
+
+    <Button
+        android:id="@+id/btReintento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="6dp"
+        android:gravity="center_horizontal"
+        android:text="@string/boton_reintentar" />
+
+</LinearLayout>

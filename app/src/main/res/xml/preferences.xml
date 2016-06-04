@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preferences_title" >
+        <ListPreference
+            android:defaultValue="siempre"
+            android:dialogTitle="@string/title_list_preference"
+            android:entries="@array/tipos_descarga"
+            android:entryValues="@array/tipos_descarga_key"
+            android:key="downloadImagePref"
+            android:summary="@string/descarga_imagenes_preference"
+            android:title="@string/title_list_preference" />
+
+        <CheckBoxPreference
+            android:id="@+id/isSplashEnabled"
+            android:defaultValue="true"
+            android:key="isSplashEnabled"
+            android:summary="Selecciona para habilitar la intro al iniciar la aplicación"
+            android:title="Intro habilitada" />
+
+        <ListPreference
+            android:defaultValue="siempre"
+            android:dialogTitle="@string/conexion_radio"
+            android:entries="@array/tipos_conexion_radio"
+            android:entryValues="@array/tipos_conexion_radio_key"
+            android:key="radioConnectionPref"
+            android:summary="@string/conexion_radio_preference"
+            android:title="@string/conexion_radio" />
+       
+<!--         <ListPreference -->
+<!--             android:defaultValue="0" -->
+<!--             android:dialogTitle="@string/pref_sync_frec" -->
+<!--             android:entries="@array/sync_frec" -->
+<!--             android:entryValues="@array/sync_frec_key" -->
+<!--             android:key="syncFrequency" -->
+<!--             android:summary="@string/pref_sync_frec" -->
+<!--             android:title="@string/pref_sync_frec" /> -->
+        
+<!--         <ListPreference -->
+<!--             android:defaultValue="siempre" -->
+<!--             android:dialogTitle="@string/pref_sync_when" -->
+<!--             android:entries="@array/sync_when" -->
+<!--             android:entryValues="@array/sync_when_key" -->
+<!--             android:key="syncWhen" -->
+<!--             android:summary="@string/pref_sync_when" -->
+<!--             android:title="@string/pref_sync_when" /> -->
+    </PreferenceCategory>
+
+</PreferenceScreen>

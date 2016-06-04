@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mariskal Rock</string>
+    <string name="app_url">http://www.mariskalrock.com</string>
+    <string name="logo_aplicacion">Logo de MariskalRock</string>
+
+    <!-- Titulos del menu tabulado -->
+    <string name="tabNoticias">ACTUALIDAD</string>
+    <string name="tabRevista">LA HEAVY</string>
+    <string name="tabPodcast">PODCAST</string>
+    <string name="tabRadio">RADIO</string>
+    <string name="tabVideo">TV</string>
+
+    <!-- Menu -->
+    <string name="menu_refresh">Actualizar</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_info">Información</string>
+
+    <string name="contextual_ver">Ver</string>
+    <string name="contextual_compartir">Compartir</string>
+
+
+    <!-- preferencias app/menu -->
+    <string name="preferences_title">Preferencias</string>
+    <string name="title_list_preference">Descarga de imágenes</string>
+    <string name="descarga_imagenes_preference">Cuándo se descargan las imágenes</string>
+    <string name="visualizacion_imagenes_preference">Descarga de imágenes</string>
+    <string name="conexion_radio">Conexión de Radio</string>
+    <string name="conexion_radio_preference">Qué conexión se usa para la radio</string>
+    <string name="pref_sync_frec">Intervalo actualización de noticias</string>
+    <string name="pref_sync_when">Red actualización de noticias</string>
+
+
+    <!--  General  -->
+    <string name="boton_reintentar">Reintentar</string>
+    <string name="error_actualizando">No se ha detectado conexión</string>
+    <string name="error_widget_no_feed">No se han encontrado datos</string>
+    <string name="dataNotFound">No se han encontrado datos</string>
+
+    <!-- Actions -->
+    <string name="bt_show">Ver</string>
+    <string name="bt_share">Compartir</string>
+
+    <string name="progress_updating_title">Actualizando</string>
+    <string name="intro_share">Tienes que ver esto!</string>
+    <string name="progress_load_data_message">Actualizando datos&#8230;</string>
+    <string name="alert_title_conexion">Error</string>
+    <string name="alert_text_conexion">No hay conexión a internet.</string>
+    <string name="alert_title_general_error">Error</string>
+    <string name="alert_text_general_error">Error en la descarga. Refresca los datos.</string>
+    <string name="alert_aceptar">Aceptar</string>
+    <string name="imagen_item">imagen_item</string>
+
+
+    <!-- informacion -->
+    <string name="mas_info">Visita nuestra web, la web del Rock más Heavy en:</string>
+    <string name="about">MariskalRock</string>
+    <string name="license">Desarrollado por</string>
+    <string name="about_content"><b>CONTACTOS</b>\n<i>Redacción/Radio/Tv/Publicidad:\n</i>· radio@mariskalrock.com\n\n<i>Correspondencia:</i>\n· Correo Terrestre: Apdo. Correos 2597 – 28080 Madrid (España)\n\nIncidencias y sugerencias web:\n· web@mariskalrock.com</string>
+    <string name="copyright">Copyright 1997–2012 MariskalRock.com\nTodos los derechos reservados</string>
+    <string name="desarrolladoPor"><b>Desarrollado por:</b>\n· Isaac Palon\n\n<b>Contacto/Sugerencias:</b>\n· palo.isaac@gmail.com</string>
+    <string name="version"><b>Version Actual:</b></string>
+    <string name="logo_de_la_intro">Logo de la intro</string>
+
+    <!-- WIDGETS -->
+    <string name="widgetImage">Imagen del widget</string>
+    <string name="widget_button_next">Siguiente</string>
+    <string name="widget_button_previous">Anterior</string>
+    <string name="error_sincronizando_widget">No se han actualizado los datos</string>
+
+    <!-- SECCION VIDEOS -->
+    <string name="separator_subtitle">|</string>
+    <string name="reproducciones_subtitle">reprod.</string>
+
+    <!-- SECCION REVISTA -->
+    <string name="portada_heavy">Portada de La Heavy</string>
+    <string name="obteniendo_im_genes">Sincronizando portadas</string>
+    <string name="error_obteniendo_im_genes">No se han podido obtener las portadas. Inténtalo de nuevo.</string>
+    <string name="imagenPortada">Portada de la revista</string>
+
+    <!-- SECCION RADIO -->
+    <string name="radio_reproduciendo">Reproduciendo&#8230;</string>
+    <string name="radio_conectando">Conectando&#8230;</string>
+    <string name="radio_instrucciones">Pulsa play para reproducir la radio.</string>
+    <string name="radio_introduccion">¡Escucha la emisora más heavy directamente!</string>
+    <string name="radio_introduccion_notas">La radio consume datos. Revisa los límites de tu tarifa de datos y usa preferentemente conexión Wifi para aumentar el rendimiento.</string>
+    <string name="radio_no_conexion_wifi">Sin Wifi. Verifica las preferencias.</string>
+    <string name="radio_no_conexion">Sin conexión. Verifica la configuración.</string>
+</resources>

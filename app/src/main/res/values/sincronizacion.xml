@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="sync_frec">
+      <item>Cada 1 hora</item>
+      <item>Cada 3 horas</item>
+      <item>Cada 6 horas</item>
+      <item>Cada 12 horas</item>
+      <item>Cada 24 horas</item>
+      <item>Nunca</item>
+   </string-array>
+   <string-array name="sync_frec_key">
+      <item>1</item>
+      <item>3</item>
+      <item>6</item>
+      <item>12</item>
+      <item>24</item>
+      <item>0</item>
+   </string-array>
+   
+   <string-array name="sync_when">
+      <item>siempre</item>
+      <item>Solo con Wifi</item>
+      <item>Nunca</item>
+   </string-array>
+   <string-array name="sync_when_key">
+      <item>siempre</item>
+      <item>wifi</item>
+      <item>nunca</item>
+   </string-array>
+</resources>

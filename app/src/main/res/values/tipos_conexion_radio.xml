@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="tipos_conexion_radio">
+      <item>Siempre</item>
+      <item>Solo con Wifi</item>
+   </string-array>
+   <string-array name="tipos_conexion_radio_key">
+      <item>siempre</item>
+      <item>wifi</item>
+   </string-array>
+</resources>

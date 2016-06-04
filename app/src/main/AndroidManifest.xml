@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.isaacpc.mariskalrock"
+    android:versionCode="14"
+    android:versionName="3.0.3">
+
+    <uses-sdk
+    android:minSdkVersion="10"
+    android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <application
+        android:name="com.isaacpc.mariskalrock.MariskalRockApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Mr_rojo">
+        <service android:name=".widget.UpdateLargeWidgetService"></service>
+        <service android:name=".widget.UpdateSmallWidgetService"></service>
+        <service android:name=".thread.ImageDownloaderService"></service>
+        <service android:name=".thread.FeedUpdaterService"></service>
+
+        <receiver
+            android:name=".widget.WidgetSmallProvider"
+            android:icon="@drawable/ic_launcher"
+            android:label="MariskalRock (Pequeño)">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.isaacpc.mariskalrock.FEED_UPDATED_WIDGET" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_small_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.WidgetLargeProvider"
+            android:icon="@drawable/ic_launcher"
+            android:label="MariskalRock (Grande)"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.isaacpc.mariskalrock.FEED_UPDATED_WIDGET" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.isaacpc.mariskalrock.widget.WidgetProvider.ACTION_WIDGET_NEXT_NEWS" />
+                <action android:name="com.isaacpc.mariskalrock.widget.WidgetProvider.ACTION_WIDGET_PREVIOUS_NEWS" />
+                <action android:name="com.isaacpc.mariskalrock.widget.WidgetProvider.ACTION_WIDGET_RETRY" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_large_info" />
+        </receiver>
+        <receiver android:name=".thread.UpdateFeedReceiver" />
+
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AboutActivity"></activity>
+        <activity android:name=".activity.FragmentTabsActivity"></activity>
+        <activity android:name=".activity.PreferencesActivity"></activity>
+    </application>
+
+</manifest>
