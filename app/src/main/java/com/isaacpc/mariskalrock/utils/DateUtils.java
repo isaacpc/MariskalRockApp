@@ -11,7 +11,7 @@ public class DateUtils {
 
 
     /**
-     * Obtiene un Date de una fecha en string de formato
+     * gets a calendar from a string date
      *
      * @param pubDate
      * @return
@@ -33,7 +33,7 @@ public class DateUtils {
 
 
     /**
-     * Convirte un calendar a una fecha usando el formato indicado
+     * gets a string date from a calendar value
      *
      * @param cal
      * @return
@@ -50,7 +50,7 @@ public class DateUtils {
 
 
     /**
-     * Convirte un calendar a una fecha usando el formato indicado
+     * Gets a string value from a calendar date
      *
      * @param cal
      * @return

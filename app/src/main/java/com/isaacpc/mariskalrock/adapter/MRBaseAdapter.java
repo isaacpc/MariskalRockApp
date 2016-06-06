@@ -47,26 +47,22 @@ public class MRBaseAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public Object getItem(final int position) {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public long getItemId(final int position) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public View getView(final int position, final View convertView,
                         final ViewGroup parent) {
-        // TODO Auto-generated method stub
         return null;
     }
 
@@ -92,7 +88,7 @@ public class MRBaseAdapter extends BaseAdapter {
     }
 
     /**
-     * @param context the context to set
+     * @param context1 the context to set
      */
     public final void setContext(final Context context1) {
         context = context1;

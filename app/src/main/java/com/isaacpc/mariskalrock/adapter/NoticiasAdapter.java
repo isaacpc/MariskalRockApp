@@ -39,10 +39,8 @@ public class NoticiasAdapter extends MRBaseAdapter {
 
         @Override
         public  long getItemId(final int position) {
-                // TODO Auto-generated method stub
                 return 0;
         }
-
 
         @Override
         public View getView(final int position, View convertView, final ViewGroup parent) {
