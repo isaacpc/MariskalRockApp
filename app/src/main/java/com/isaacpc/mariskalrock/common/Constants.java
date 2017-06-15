@@ -32,7 +32,7 @@ public class Constants {
     public final static String FEED_PODCAST_URL = "http://www.ivoox.com/feed_fg_f14151_filtro_1.xml";
     public final static String FEED_VIDEO_URL = "https://gdata.youtube.com/feeds/api/users/mariskalrocktv/uploads?alt=json";
 
-    public final static String STREAMING_AUDIO_URL = "http://radioserver9.profesionalhosting.com:32997";
+    public final static String STREAMING_AUDIO_URL = "http://radioserver9.profesionalhosting.com:8216";
     public static final int ITEM_TAG_URL = 0;
 
     //ALARMA

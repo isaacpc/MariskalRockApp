@@ -25,10 +25,12 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
                 return new NoticiasFragment();
             case 1:
                 return new PodcastFragment();
+
+            /*case 2:
+                return new VideoFragment();*/
             case 2:
-                return new VideoFragment();
-            case 3:
                 return new RadioFragment();
+
         }
 
         return null;
@@ -37,7 +39,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // get item count - equal to number of tabs
-        return 4;
+        return 3;
     }
 
 }

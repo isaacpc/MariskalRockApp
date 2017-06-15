@@ -48,8 +48,9 @@ public class FragmentTabsActivity extends ActionBarActivity implements ActionBar
 
         actionBar.addTab(actionBar.newTab().setText(getString(R.string.tabNoticias)).setTabListener(this));
         actionBar.addTab(actionBar.newTab().setText(getString(R.string.tabPodcast)).setTabListener(this));
-        actionBar.addTab(actionBar.newTab().setText(getString(R.string.tabVideo)).setTabListener(this));
         actionBar.addTab(actionBar.newTab().setText(getString(R.string.tabRadio)).setTabListener(this));
+        //actionBar.addTab(actionBar.newTab().setText(getString(R.string.tabVideo)).setTabListener(this));
+
 
 
         /**
