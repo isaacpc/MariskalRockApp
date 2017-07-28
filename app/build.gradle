@@ -8,8 +8,8 @@ android {
         applicationId "com.isaacpc.mariskalrock"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 14
-        versionName "3.0.3"
+        versionCode 15
+        versionName "3.0.4"
     }
     buildTypes {
         release {

@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.isaacpc.mariskalrock"
-    android:versionCode="15"
-    android:versionName="3.0.4">
+    android:versionCode="16"
+    android:versionName="3.0.5">
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
     <application
